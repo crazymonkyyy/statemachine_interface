@@ -1,0 +1,5 @@
+* a machine can give itself input, like say a prime number generator, self referncing a range of primes is breaking one of the implied rules and your do allot of nothing if you try a `foreach(x;primelist[]){if(x.isprime) primelist~=x;`
+* the end condiction isstable should imply that futher output is fine, while ranges are ussaly incredably picky
+* indexs/foresight could change, if a pyshics objects changes direction where it is in 3 frames changes; some systems airnt pure
+* Slices are from a start to an end, and ranges enforce this idea, machines bidirectional idea is from the start point, 0-- is -1, knowing the end state of some code is far far harder to then working backwards one tick.
+* Maybe I just want wiggling ui elements when im composing types and not some high minded concept of how data and math works
