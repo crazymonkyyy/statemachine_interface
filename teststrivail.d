@@ -28,3 +28,28 @@ unittest{
 	foo++;
 	foo.get.writeln;
 }
+unittest{
+	"---".writeln;
+	selfrebooting!(counter!3) foo;
+	foreach(i;1..10){
+		foo.get.writeln;foo++;}
+}
+unittest{
+	"---".writeln;
+	selfrebooting!(counter!3,true) foo;
+	foreach(i;1..10){
+		foo.get.writeln;foo++;}
+}
+unittest{
+	"---".writeln;
+	alias M=parroit!int;
+	alias N=delaiedassign!int;
+	alias zippy=zip!(M,N);
+	printy!zippy foo;
+	import basic;
+	foreach(i;1..30){
+		if(uniform(0,2)){
+			foo+=uniform(1,10);
+		}else{
+			foo++;}
+}}

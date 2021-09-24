@@ -1,5 +1,6 @@
 import machineulity;
 /** counts from 0 to n, noninclusive, then halts */
+//is noninclusive incorrect because my usage? im tests of a rebooting!counter!3 is 0,1,0,1 and not 0,1,2 
 struct counter(int to){
 	int i;
 	auto get(){return i;}
